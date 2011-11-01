@@ -1,0 +1,11 @@
+h1 Node.js + socket.io + express
+#wrapper
+  #box
+
+script
+  var socket = io.connect(window.location.origin);
+  socket.on('instruction', function(data) {
+    // console.log(data.x + " " + data.y);
+    $('#box').css('top', '+=' + data.y);
+    $('#box').css('left', '+=' + data.x);
+  });
