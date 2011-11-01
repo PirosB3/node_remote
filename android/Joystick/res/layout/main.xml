@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_gravity="left" android:orientation="vertical">
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:gravity="top" android:layout_gravity="top">
+        <Button android:id="@+id/connectButton" android:text="Connect" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+        <EditText android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/connectTextField">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:id="@+id/status" android:text="Ready" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_gravity="center"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:baselineAligned="false">
+        <com.pirosb3.joystick.components.JoystickView android:layout_width="match_parent" android:id="@+id/joystick" android:layout_height="match_parent" android:layout_gravity="center_vertical"></com.pirosb3.joystick.components.JoystickView>
+    </LinearLayout>
+</LinearLayout>
