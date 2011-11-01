@@ -1,8 +1,10 @@
+// Check if argument has been submitted
+if (process.argv.length != 3) {
+  console.log("Usage: node app.js YourIP")
+  return;
+}
 
-/**
- * Module dependencies.
- */
-
+// Module dependancies
 var express = require('express');
 var net = require('net');
 var app = module.exports = express.createServer()
@@ -24,7 +26,7 @@ net.createServer(function(stream) {
   stream.on('disconnect', function() {
     console.log("Client disconnected");
   })
-}).listen(8000, '141.163.148.254');
+}).listen(8000, process.argv[2]);
 
 // Configuration
 
