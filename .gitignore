@@ -1,1 +1,8 @@
 node_modules/*
+*.apk
+*.ap_
+*.dex
+*.class
+android/Joystick/bin/
+android/Joystick/gen/
+local.properties
